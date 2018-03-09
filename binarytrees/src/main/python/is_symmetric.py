@@ -14,8 +14,7 @@ def check_symmetry(tree):
             return True
 
         elif subtree0 and subtree1:
-            return (subtree0.data == subtree1.data and is_symmetric(subtree0.left, subtree1.right)
-                    and is_symmetric(subtree0.right, subtree1.left))
+            return (subtree0.data == subtree1.data and is_symmetric(subtree0.left, subtree1.right) and is_symmetric(subtree0.right, subtree1.left))
 
         else:
             return False
